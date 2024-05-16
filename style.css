@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:thin;
+    src: url(Fuentes/Thin.ttf);
+}
+@font-face {
+    font-family: medium;
+    src: url(Fuentes/Medium.ttf);
+}
+@font-face {
+    font-family: regular;
+    src: url(Fuentes/Regular.ttf);
+}
+@font-face {
+    font-family: mediumitalic;
+    src: url(Fuentes/Mediumitalic.ttf);
+}
+@font-face {
+    font-family:light;
+    src: url(Fuentes/Light.ttf);
+}
+@font-face {
+    font-family: italic;
+    src: url(Fuentes/Italic.ttf);
+}
+@font-face {
+    font-family:bold;
+    src: url(Fuentes/Bold.ttf);
+}
+@font-face {
+    font-family: bolditalic;
+    src: url(Fuentes/Bolditalic.ttf);
+}
+@font-face {
+    font-family: lightitalic;
+    src: url(Fuentes/Lightitalic.ttf);
+}
+body{
+    background-color: black;
+}
+
+#menu{
+    width: 100%;
+    display: flex;
+    padding: 1em 1em 1em 1em;
+    align-items: flex-end
+}
+#menu div{
+    width: 100%;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+#menu ul{
+    color: #33AFC9;
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+    font-family: bold;
+    text-decoration-line: underline;
+    text-decoration-color: #FC9317;
+}
+#menu img{
+    width: 10%;
+}
+#menu h1{
+    font-family: thin;
+    font-size: 45px;
+}
+#section1{
+    background-color: #3C73A9;
+    display: grid;
+    grid-template-columns: 350px 1500px;
+    grid-template-rows:200px 250px 300px 300px;
+}
+.partefoto{
+    background-color: #041538;
+    padding: 1em;
+    grid-column:1;
+    grid-row:1;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 13px 0 13px 0;
+    color: white;
+}
+.partefoto ul{
+    padding: 0;
+}
+.partefoto h2{
+    color: #33AFC9;
+    font-family: medium;
+}
+.partefoto h3{
+    font-family: regular;
+}
+.partefoto img{
+    width: 43%;
+}
+.misblogs{ 
+    border-radius: 13px 13px 0 0;
+    background-color: #041538;
+    padding: 5em 0 1em 3em;
+    grid-column:1;
+    grid-row:2;
+    color: white;
+}
+.misblogs h2{
+    color: #33AFC9;
+    padding: 0 0 0.3em 0;
+    font-size: 30px;
+    font-family: bolditalic;
+}
+.misblogs h3{
+    font-family: lightitalic;
+}
+.misblogs button{
+    width: 50%;
+    height: 20%;
+    background-color: #FC9317;
+    margin: 0.5em 0 0 0;
+    font-family: bold;
+    font-size: 100%;
+    border-radius: 5px;
+}
+.conu{
+    padding: 1em 0 0 3em;
+    grid-column:1;
+    grid-row:3;
+    background-color: #041538;
+    color: white;
+}
+.conu h3{
+    font-family: lightitalic;
+}
+.conu button{
+    margin: 0.5em 0 0 0;
+    width: 50%;
+    height: 11.5%;
+    background-color: #FC9317;
+    font-family: bold;
+    font-size: 102%;
+    border-radius: 5px;
+}
+.frase{
+    border-radius: 0 0 13px 13px;
+    margin: 0;
+    background-color: #041538;
+    padding: 5em 0 0 0;
+    grid-column:1;
+    grid-row:4;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: italic;
+}
+.arriba{
+    margin: 2em;
+    grid-column:2;
+    grid-row:1;
+    display: flex;
+    flex-direction: column;
+}
+.arriba p{
+    font-size: 23px;
+    font-family: regular;
+}
+.arriba h3{
+    color: #124067;
+    font-family: light;
+}
+.arriba h2{
+    margin: 1.5em 0 0 0;
+    color: #33AFC9;
+    background-color: #041538;
+    width: 21%;
+    padding: 0.5em;
+    border-radius: 0 20px 20px 0;
+    font-family: mediumitalic;
+}
+.arriba img{
+    width: 30%;
+    margin: 0.5em;
+    border-radius: 0 50px 0 50px;
+    box-shadow: 0 20px 20px 5px rgba(0, 0, 0, 0.15);
+}
+.dia1{
+    display: flex;
+    align-items: center;
+    padding: 1em 0 0 0;
+}
+.dia1 h3{
+    font-size: 21px;
+    color: #11395D;
+    font-family: regular;
+    opacity: 70%;
+}
+.conexion{
+    padding: 0 0 0 1em;
+}
+.conexion a{
+    color: #FC9317;
+    font-size: 21px;
+    opacity: 90%;
+}
+.images{
+    margin:3em 2em 2em 2em;
+    grid-column:2;
+    grid-row:3;
+}
+.images h2{
+    color: #33AFC9;
+    background-color: #041538;
+    width: 21%;
+    padding: 0.5em;
+    border-radius: 0 20px 20px 0;
+    font-family: mediumitalic;
+}
+.imagenes{
+    display: flex;
+    gap: 7em;
+    padding: 1em 0 0.5em 0;
+}
+.imagenes img{
+    width: 23%;
+    margin: 0.5em;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 20px 20px 5px rgba(0, 0, 0, 0.15);
+}
+.abajo{
+    padding: 0.5em 0.5em 3em 0.5em;
+    grid-column:2;
+    grid-row:4;
+}
+.abajo p{
+    font-size: 23px;
+    font-family: regular;
+}
+.abajo a{
+    color: #FC9317;
+    font-size: 21px;
+    opacity: 90%;
+}
+.abajo h3{
+    opacity: 70%;
+    font-size: 21px;
+    color: #11395D;
+    font-family: regular;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1000px) {
+    body {
+        background-color: #000000; 
+    }
+    #menu div{
+        flex-direction: column;
+        align-items: normal;
+        width: 50%;
+    }
+    #menu img{
+        align-items:  center;
+        width: 55%;
+    }
+    #menu h1{
+        font-size: 30px;
+    }
+    #menu ul{
+        width: 80%;
+        font-size: 20px;
+        gap: 0.5em;
+    }
+    #section1{
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 130px 130px 600px 1000px 200px;
+    }
+    .partefoto{
+        grid-column:1;
+        grid-row:1;
+        border-radius: 0;
+        padding: 0 5em 0 5em;
+    }
+    .partefoto img{
+        width: 15%;
+    }
+    .misblogs{
+        grid-column:1;
+        grid-row:2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 1em 0;
+        border-radius: 0;
+    }
+    .misblogs button{
+        width: 20%;
+        height: 43%;
+    }
+    .conu{
+        grid-column:1;
+        grid-row:3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 0 0 0;
+        border-radius: 0;
+    }
+    .conu button{
+        width: 20%;
+        height: 37%;
+    }
+    .frase{
+        grid-column:1;
+        grid-row:6;
+        justify-content: center;
+        border-radius: 0;
+    }
+    .arriba{
+        grid-column:1;
+        grid-row:4;
+    }
+    .arriba img{
+        width: 50%;
+    }
+    .arriba h2{
+        width: 50%;
+    }
+    .arriba h3{
+        font-size: 18px;
+    }
+    .arriba p{
+        width: 100%;
+        font-size: 20px;
+    }
+    .dia1{
+        flex-direction: column;
+    }
+    .images{
+        grid-column:1;
+        grid-row:5;
+    }
+    .images h2{
+        width: 50%;
+    }
+    .images h3{
+        font-size: 18px;
+    }
+    .images p{
+        width: 100%;
+        font-size: 20px;
+    }
+    .imagenes{
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+    }
+    .imagenes img{
+        width: 45%;
+    }
+}
